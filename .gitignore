@@ -1,0 +1,4 @@
+# Ignore all rendercv output
+rendercv_output/
+# Ignore python virtual environments
+.venv/
