@@ -1,0 +1,31 @@
+name: Build Resume PDF
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install system dependencies
+        run: sudo apt-get update && sudo apt-get install -y make
+
+      - name: Install requirements and build
+        run: make
+
+      - name: Upload rendercv_output artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: rendercv_output
+          path: rendercv_output/
