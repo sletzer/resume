@@ -22,3 +22,9 @@ it will:
 Alternatively, there is a cloud-native way to build it via the `build.yml` CI/CD file or **github actions** as its called. 
 
 Any push to the `main` branch will kick off the build
+
+
+Here is an example of the output:
+
+![Sean_Letzer_CV_1.png](rendercv_output/Sean_Letzer_CV_1.png)
+![Sean_Letzer_CV_2.png](rendercv_output/Sean_Letzer_CV_2.png)
