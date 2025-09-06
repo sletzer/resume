@@ -3,7 +3,7 @@
 
 #let name = "Sean Letzer"
 #let locale-catalog-page-numbering-style = context { "Sean Letzer - Page " + str(here().page()) + " of " + str(counter(page).final().first()) + "" }
-#let locale-catalog-last-updated-date-style = "Last updated in June 2025"
+#let locale-catalog-last-updated-date-style = "Last updated in Sept 2025"
 #let locale-catalog-language = "en"
 #let design-page-size = "us-letter"
 #let design-section-titles-font-size = 1.4em
@@ -54,8 +54,8 @@
 #let design-page-bottom-margin = 2cm
 #let design-page-left-margin = 2cm
 #let design-page-right-margin = 2cm
-#let design-page-show-last-updated-date = true
-#let design-page-show-page-numbering = true
+#let design-page-show-last-updated-date = false
+#let design-page-show-page-numbering = false
 #let design-links-underline = false
 #let design-entry-types-education-entry-degree-column-width = 1cm
 #let date = datetime.today()
@@ -465,7 +465,6 @@
   [#fa-icon("location-dot", size: 0.9em) #h(0.05cm)Los Angeles, CA, USA],
   [#box(original-link("mailto:seanletzer@gmail.com")[#fa-icon("envelope", size: 0.9em) #h(0.05cm)seanletzer\@gmail.com])],
   [#box(original-link("tel:+1-818-224-9948")[#fa-icon("phone", size: 0.9em) #h(0.05cm)\(818\) 224-9948])],
-  [#box(original-link("https://www.linkedin.com/in/sletzer")[#fa-icon("link", size: 0.9em) #h(0.05cm)www.linkedin.com\/in\/sletzer])],
   [#box(original-link("https://linkedin.com/in/sletzer")[#fa-icon("linkedin", size: 0.9em) #h(0.05cm)sletzer])],
   [#box(original-link("https://github.com/sletzer")[#fa-icon("github", size: 0.9em) #h(0.05cm)sletzer])],
 )
