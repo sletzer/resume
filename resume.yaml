@@ -3,8 +3,8 @@ cv:
   label: Software Engineer
   email: seanletzer@gmail.com
   phone: +1(818) 224-9948
-  website: https://www.linkedin.com/in/sletzer
-  photo: "assets/profile_picture.jpg"
+  #website: https://www.linkedin.com/in/sletzer
+  #photo: "assets/profile_picture.jpg"
   location: Los Angeles, CA, USA
   social_networks:
     - network: LinkedIn
@@ -122,3 +122,8 @@ cv:
         area: Computer Science
         degree: B.S.
         end_date: "2016-06"
+design:
+  theme: classic # valid options are: classic, sb2nov, moderncv, engineeringresumes, engineeringclassic
+  page:
+    show_page_numbering: false
+    show_last_updated_date: false

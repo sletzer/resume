@@ -3,7 +3,6 @@
 - Phone: +1 818 224 9948
 - Email: [seanletzer@gmail.com](mailto:seanletzer@gmail.com)
 - Location: Los Angeles, CA, USA
-- Website: [www.linkedin.cominsletzer](https://www.linkedin.com/in/sletzer)
 - LinkedIn: [sletzer](https://linkedin.com/in/sletzer)
 - GitHub: [sletzer](https://github.com/sletzer)
 
