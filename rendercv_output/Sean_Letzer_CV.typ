@@ -8,12 +8,12 @@
 #let design-page-size = "us-letter"
 #let design-section-titles-font-size = 1.4em
 #let design-colors-text = rgb(0, 0, 0)
-#let design-colors-section-titles = rgb(0, 79, 144)
+#let design-colors-section-titles = rgb(0, 0, 0)
 #let design-colors-last-updated-date-and-page-numbering = rgb(128, 128, 128)
-#let design-colors-name = rgb(0, 79, 144)
-#let design-colors-connections = rgb(0, 79, 144)
+#let design-colors-name = rgb(0, 0, 0)
+#let design-colors-connections = rgb(0, 0, 0)
 #let design-colors-links = rgb(0, 79, 144)
-#let design-section-titles-font-family = "Source Sans 3"
+#let design-section-titles-font-family = "New Computer Modern"
 #let design-section-titles-bold = true
 #let design-section-titles-line-thickness = 0.5pt
 #let design-section-titles-font-size = 1.4em
@@ -21,18 +21,18 @@
 #let design-section-titles-vertical-space-above = 0.5cm
 #let design-section-titles-vertical-space-below = 0.3cm
 #let design-section-titles-small-caps = false
-#let design-links-use-external-link-icon = true
+#let design-links-use-external-link-icon = false
 #let design-text-font-size = 10pt
 #let design-text-leading = 0.6em
-#let design-text-font-family = "Source Sans 3"
+#let design-text-font-family = "New Computer Modern"
 #let design-text-alignment = "justified"
 #let design-text-date-and-location-column-alignment = right
 #let design-header-photo-width = 3.5cm
 #let design-header-use-icons-for-connections = true
-#let design-header-name-font-family = "Source Sans 3"
+#let design-header-name-font-family = "New Computer Modern"
 #let design-header-name-font-size = 30pt
 #let design-header-name-bold = true
-#let design-header-connections-font-family = "Source Sans 3"
+#let design-header-connections-font-family = "New Computer Modern"
 #let design-header-vertical-space-between-name-and-connections = 0.7cm
 #let design-header-vertical-space-between-connections-and-first-section = 0.7cm
 #let design-header-use-icons-for-connections = true
@@ -40,7 +40,7 @@
 #let design-header-separator-between-connections = ""
 #let design-header-alignment = center
 #let design-highlights-summary-left-margin = 0cm
-#let design-highlights-bullet = "•"
+#let design-highlights-bullet = "◦"
 #let design-highlights-top-margin = 0.25cm
 #let design-highlights-left-margin = 0.4cm
 #let design-highlights-vertical-space-between-highlights = 0.25cm
@@ -56,7 +56,7 @@
 #let design-page-right-margin = 2cm
 #let design-page-show-last-updated-date = false
 #let design-page-show-page-numbering = false
-#let design-links-underline = false
+#let design-links-underline = true
 #let design-entry-types-education-entry-degree-column-width = 1cm
 #let date = datetime.today()
 
@@ -313,7 +313,7 @@
     let ending-index = starting-index + 1
     while (
       measure(connections-list.slice(starting-index, ending-index).join(separator)).width
-        < page.width - left-sum-right-margin - design-header-photo-width * 1.1
+        < page.width - left-sum-right-margin
     ) {
       ending-index = ending-index + 1
       if ending-index > connections-list.len() {
@@ -447,17 +447,6 @@
   )
 ]
 
-#two-col(
-  left-column-width: design-header-photo-width * 1.1,
-  right-column-width: 1fr,
-  left-content: [
-    #align(
-      left + horizon,
-      image("profile_picture.jpg", width: design-header-photo-width),
-    )
-  ],
-  column-gutter: 0cm,
-  right-content: [
 = Sean Letzer
 
 // Print connections:
@@ -470,8 +459,6 @@
 )
 #connections(connections-list)
 
-  ],
-)
 
 
 == Objective
@@ -487,100 +474,126 @@
 
 #two-col-entry(
   left-content: [
-    #strong[Canoga Perkins], Software Engineering Manager
-    #v(-design-text-leading)
+    #strong[Software Engineering Manager]
 
+#emph[Canoga Perkins]
+  ],
+  right-content: [
+    #emph[Chatsworth, CA, USA]
+
+#emph[Apr 2023 – May 2025]
+  ],
+)
+#one-col-entry(
+  content: [
     #v(design-highlights-top-margin);#highlights([Led a team of 4 Embedded Software Engineers \(1:1 meetings, code reviews, mentoring\) in a team called #strong[Diagnostics].],[Led SCRUM ceremonies \(Daily Standups, Sprint Planning, Sprint Retrospectives\).],[Created user stories, epics, and tasks that aligned with the product roadmap.],[Worked with Product Management to define the product roadmap and prioritize features.],[Created career development plans for team members.],[Created software architecture documents for new features.],)
   ],
-  right-content: [
-    Chatsworth, CA, USA
-
-Apr 2023 – May 2025
-  ],
 )
 
 #v(design-entries-vertical-space-between-entries)
 #two-col-entry(
   left-content: [
-    #strong[Google], Customer and Partner Engineer
-    #v(-design-text-leading)
+    #strong[Customer and Partner Engineer]
 
+#emph[Google]
+  ],
+  right-content: [
+    #emph[Playa Vista, CA, USA]
+
+#emph[Oct 2022 – Mar 2023]
+  ],
+)
+#one-col-entry(
+  content: [
     #v(design-highlights-top-margin);#highlights([Understand product area partner\/Original Equipment Manufacturer \(OEM\) use-cases, distilling them into product requirements and implementation.],[Support enablement of third-party labs for automated and manual device certifications.],[Define experiences that realize requirements and build the necessary pieces working with key platforms and partner devices.],[Identify opportunities to improve scaled solutions to more device categories.],[Drive technical execution of strategic partner relationships within Google and launch third-party products.],[Support partners in product feature definition, implementation, pre-test, and production.],[Support partners to develop and customize features.],[Work with product area Engineering sub-teams to get features built and implemented.],[Support SoC partners, bring up, and development.],[Assist System Integrators, Original Design Manufacturers \(ODMs\), and Distributors in scaling products.],)
   ],
-  right-content: [
-    Playa Vista, CA, USA
-
-Oct 2022 – Mar 2023
-  ],
 )
 
 #v(design-entries-vertical-space-between-entries)
 #two-col-entry(
   left-content: [
-    #strong[Canoga Perkins], Software Engineer
-    #v(-design-text-leading)
+    #strong[Software Engineer]
 
+#emph[Canoga Perkins]
+  ],
+  right-content: [
+    #emph[Chatsworth, CA, USA]
+
+#emph[Apr 2020 – Sept 2022]
+  ],
+)
+#one-col-entry(
+  content: [
     #v(design-highlights-top-margin);#highlights([Developed\/maintained an application that ran on a Time-Sensitive Network Switch written in C.],[Developed a Linux device driver for a custom FPGA image on the Time-Sensitive Network Switch.],[Created\/customized a Linux distribution via Yocto that was the main embedded-OS that ran on the Time-Sensitive Network Switch.],[Created DevOps pipelines for said projects using Gitlab's CI\/CD framework written in YAML.],)
   ],
-  right-content: [
-    Chatsworth, CA, USA
-
-Apr 2020 – Sept 2022
-  ],
 )
 
 #v(design-entries-vertical-space-between-entries)
 #two-col-entry(
   left-content: [
-    #strong[Frostkeep Studios\/Indi-Ev], Software Engineer
-    #v(-design-text-leading)
+    #strong[Software Engineer]
 
+#emph[Frostkeep Studios\/Indi-Ev]
+  ],
+  right-content: [
+    #emph[Irvine, CA, USA]
+
+#emph[Oct 2019 – Apr 2020]
+  ],
+)
+#one-col-entry(
+  content: [
     #v(design-highlights-top-margin);#highlights([Embedded Android development for an electric vehicle Infotainment System on an NXP IMX8 SoM.],[Developed android navigation app using mapbox android SDK.],[Integrated Alexa-Auto SDK into navigation application.],)
   ],
-  right-content: [
-    Irvine, CA, USA
-
-Oct 2019 – Apr 2020
-  ],
 )
 
 #v(design-entries-vertical-space-between-entries)
 #two-col-entry(
   left-content: [
-    #strong[Panasonic Avionics Inc], MTS 2 Software Engineer
-    #v(-design-text-leading)
+    #strong[MTS 2 Software Engineer]
 
+#emph[Panasonic Avionics Inc]
+  ],
+  right-content: [
+    #emph[Lake Forest, CA, USA]
+
+#emph[Mar 2016 – Oct 2019]
+  ],
+)
+#one-col-entry(
+  content: [
     #v(design-highlights-top-margin);#highlights([Developed\/Maintained a File Delivery application written in C\/C++ that was responsible for pushing a large file-set over a Multicast UDP stream to hundreds of seat-back monitors of the InFlight Entertainment System.],[It advertised these files to upper layers via a FUSE FS. Android SELINUX compliant.],[Developed\/Maintained a loading application in C++\/QT for use by Field Engineers to load initial software set to the plane in a factory-fresh state.],[Created a toolchain for a legacy target.],[Dockerized build environments for said apps and integrated them into Gitlab CI pipeline.],[Created Expect scripts to automate user-input to hundreds of seatback monitors for testing.],)
   ],
-  right-content: [
-    Lake Forest, CA, USA
-
-Mar 2016 – Oct 2019
-  ],
 )
 
 #v(design-entries-vertical-space-between-entries)
 #two-col-entry(
   left-content: [
-    #strong[Kiersted System LP], Software Engineer
-    #v(-design-text-leading)
+    #strong[Software Engineer]
 
+#emph[Kiersted System LP]
+  ],
+  right-content: [
+    #emph[Irvine, CA, USA]
+
+#emph[Nov 2015 – Mar 2016]
+  ],
+)
+#one-col-entry(
+  content: [
     #v(design-highlights-top-margin);#highlights([Developed dynamic web applications using the Java EE + Spring frameworks.],[Incorporated data visualization techniques into web apps.],)
   ],
-  right-content: [
-    Irvine, CA, USA
-
-Nov 2015 – Mar 2016
-  ],
 )
 
 #v(design-entries-vertical-space-between-entries)
 #two-col-entry(
   left-content: [
-    #strong[Magzor Robotics Inc], Platform Architect Intern
+    #strong[Platform Architect Intern]
+
+#emph[Magzor Robotics Inc]
   ],
   right-content: [
-    June 2015 – Nov 2015
+    #emph[June 2015 – Nov 2015]
   ],
 )
 #one-col-entry(
@@ -638,16 +651,26 @@ Nov 2015 – Mar 2016
 == Education
 
 
-// YES DATE, YES DEGREE
-#three-col-entry(
-  left-column-width: 1cm,
-  left-content: [#strong[B.S.]],
-  middle-content: [
-    #strong[University Of California, Irvine], Computer Science
+// YES DATE, NO DEGREE
+#two-col-entry(
+  left-content: [
+    #strong[University Of California, Irvine]
+
+#emph[B.S. in Computer Science]
   ],
   right-content: [
-    June 2016
+    #emph[June 2016]
   ],
+)
+#block(
+  [
+    #set par(spacing: 0pt)
+    
+  ],
+  inset: (
+    left: design-entries-left-and-right-margin,
+    right: design-entries-left-and-right-margin,
+  ),
 )
 
 
