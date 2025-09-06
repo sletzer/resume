@@ -13,16 +13,18 @@ Looking to bring my expertise in embedded systems alongside a fluid mix of soft 
 
 # Experience
 
-## Canoga Perkins, Software Engineering Manager
+## Canoga Perkins, Senior Software Engineer/Team Lead
 
 - Apr 2023 – May 2025
 - Chatsworth, CA, USA
-- Led a team of 4 Embedded Software Engineers (1:1 meetings, code reviews, mentoring) in a team called **Diagnostics**.
-- Led SCRUM ceremonies (Daily Standups, Sprint Planning, Sprint Retrospectives).
-- Created user stories, epics, and tasks that aligned with the product roadmap.
-- Worked with Product Management to define the product roadmap and prioritize features.
-- Created career development plans for team members.
-- Created software architecture documents for new features.
+- Modified a linux ethernet driver (xilinx) to work with a custom FPGA image
+- Created a custom filesystem on linux using FUSE codenamed sensorFS that created a more detailed sensor interface for the product
+- Created a custom distribution in SONIC OS for a Time-Sensitive Network Switch
+- Designed and Implemented various features in a python3 testing application codenamed Improv (Internal Manufacturing Provisioning) using QT for python
+- Debugged various bus issues (I2C, SPI) using a Saleae Logic Analyzer
+- Drove the requirements for an embedded webserver on the Time-Sensitive Network Switch, and managed an outsourced team to implement it
+- Partcipated in various design reviews for hardware and software
+- Led SCRUM ceremonies (planning, grooming, retrospectives, standups)
 
 ## Google, Customer and Partner Engineer
 

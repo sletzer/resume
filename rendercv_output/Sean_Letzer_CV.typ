@@ -313,7 +313,7 @@
     let ending-index = starting-index + 1
     while (
       measure(connections-list.slice(starting-index, ending-index).join(separator)).width
-        < page.width - left-sum-right-margin - design-header-photo-width * 1.1
+        < page.width - left-sum-right-margin
     ) {
       ending-index = ending-index + 1
       if ending-index > connections-list.len() {
@@ -447,17 +447,6 @@
   )
 ]
 
-#two-col(
-  left-column-width: design-header-photo-width * 1.1,
-  right-column-width: 1fr,
-  left-content: [
-    #align(
-      left + horizon,
-      image("profile_picture.jpg", width: design-header-photo-width),
-    )
-  ],
-  column-gutter: 0cm,
-  right-content: [
 = Sean Letzer
 
 // Print connections:
@@ -470,8 +459,6 @@
 )
 #connections(connections-list)
 
-  ],
-)
 
 
 == Objective
@@ -487,10 +474,10 @@
 
 #two-col-entry(
   left-content: [
-    #strong[Canoga Perkins], Software Engineering Manager
+    #strong[Canoga Perkins], Senior Software Engineer\/Team Lead
     #v(-design-text-leading)
 
-    #v(design-highlights-top-margin);#highlights([Led a team of 4 Embedded Software Engineers \(1:1 meetings, code reviews, mentoring\) in a team called #strong[Diagnostics].],[Led SCRUM ceremonies \(Daily Standups, Sprint Planning, Sprint Retrospectives\).],[Created user stories, epics, and tasks that aligned with the product roadmap.],[Worked with Product Management to define the product roadmap and prioritize features.],[Created career development plans for team members.],[Created software architecture documents for new features.],)
+    #v(design-highlights-top-margin);#highlights([Modified a linux ethernet driver \(xilinx\) to work with a custom FPGA image],[Created a custom filesystem on linux using FUSE codenamed sensorFS that created a more detailed sensor interface for the product],[Created a custom distribution in SONIC OS for a Time-Sensitive Network Switch],[Designed and Implemented various features in a python3 testing application codenamed Improv \(Internal Manufacturing Provisioning\) using QT for python],[Debugged various bus issues \(I2C, SPI\) using a Saleae Logic Analyzer],[Drove the requirements for an embedded webserver on the Time-Sensitive Network Switch, and managed an outsourced team to implement it],[Partcipated in various design reviews for hardware and software],[Led SCRUM ceremonies \(planning, grooming, retrospectives, standups\)],)
   ],
   right-content: [
     Chatsworth, CA, USA
