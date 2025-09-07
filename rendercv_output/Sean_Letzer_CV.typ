@@ -313,7 +313,7 @@
     let ending-index = starting-index + 1
     while (
       measure(connections-list.slice(starting-index, ending-index).join(separator)).width
-        < page.width - left-sum-right-margin - design-header-photo-width * 1.1
+        < page.width - left-sum-right-margin
     ) {
       ending-index = ending-index + 1
       if ending-index > connections-list.len() {
@@ -447,17 +447,6 @@
   )
 ]
 
-#two-col(
-  left-column-width: design-header-photo-width * 1.1,
-  right-column-width: 1fr,
-  left-content: [
-    #align(
-      left + horizon,
-      image("profile_picture.jpg", width: design-header-photo-width),
-    )
-  ],
-  column-gutter: 0cm,
-  right-content: [
 = Sean Letzer
 
 // Print connections:
@@ -470,8 +459,6 @@
 )
 #connections(connections-list)
 
-  ],
-)
 
 
 == Objective
@@ -532,60 +519,15 @@ Apr 2020 – Sept 2022
 #v(design-entries-vertical-space-between-entries)
 #two-col-entry(
   left-content: [
-    #strong[Frostkeep Studios\/Indi-Ev], Software Engineer
-    #v(-design-text-leading)
-
-    #v(design-highlights-top-margin);#highlights([Embedded Android development for an electric vehicle Infotainment System on an NXP IMX8 SoM.],[Developed android navigation app using mapbox android SDK.],[Integrated Alexa-Auto SDK into navigation application.],)
-  ],
-  right-content: [
-    Irvine, CA, USA
-
-Oct 2019 – Apr 2020
-  ],
-)
-
-#v(design-entries-vertical-space-between-entries)
-#two-col-entry(
-  left-content: [
     #strong[Panasonic Avionics Inc], MTS 2 Software Engineer
     #v(-design-text-leading)
 
-    #v(design-highlights-top-margin);#highlights([Developed\/Maintained a File Delivery application written in C\/C++ that was responsible for pushing a large file-set over a Multicast UDP stream to hundreds of seat-back monitors of the InFlight Entertainment System.],[It advertised these files to upper layers via a FUSE FS. Android SELINUX compliant.],[Developed\/Maintained a loading application in C++\/QT for use by Field Engineers to load initial software set to the plane in a factory-fresh state.],[Created a toolchain for a legacy target.],[Dockerized build environments for said apps and integrated them into Gitlab CI pipeline.],[Created Expect scripts to automate user-input to hundreds of seatback monitors for testing.],)
+    #v(design-highlights-top-margin);#highlights([Developed\/Maintained a File Delivery application written in C\/C++ that was responsible for pushing a large file-set over a Multicast UDP stream to hundreds of seat-back monitors of the InFlight Entertainment System.],[Developed\/Maintained a loading application in C++\/QT for use by Field Engineers to load initial software set to the plane in a factory-fresh state.],[Dockerized build environments for said apps and integrated them into Gitlab CI pipeline.],)
   ],
   right-content: [
     Lake Forest, CA, USA
 
 Mar 2016 – Oct 2019
-  ],
-)
-
-#v(design-entries-vertical-space-between-entries)
-#two-col-entry(
-  left-content: [
-    #strong[Kiersted System LP], Software Engineer
-    #v(-design-text-leading)
-
-    #v(design-highlights-top-margin);#highlights([Developed dynamic web applications using the Java EE + Spring frameworks.],[Incorporated data visualization techniques into web apps.],)
-  ],
-  right-content: [
-    Irvine, CA, USA
-
-Nov 2015 – Mar 2016
-  ],
-)
-
-#v(design-entries-vertical-space-between-entries)
-#two-col-entry(
-  left-content: [
-    #strong[Magzor Robotics Inc], Platform Architect Intern
-  ],
-  right-content: [
-    June 2015 – Nov 2015
-  ],
-)
-#one-col-entry(
-  content: [
-    #v(design-highlights-top-margin);#highlights([Design and development of an Embedded Library that allows Magzor Solutions to integrate smoothly into popular electronics development platforms \(Arduino, Texas Instrument's MSP430\/432, Intel Edison, etc\).],[Designed and developed a Code Generator to give Magzor customers custom programs to use with their online hardware purchases.],)
   ],
 )
 

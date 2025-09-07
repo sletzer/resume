@@ -48,37 +48,13 @@ Looking to bring my expertise in embedded systems alongside a fluid mix of soft 
 - Created/customized a Linux distribution via Yocto that was the main embedded-OS that ran on the Time-Sensitive Network Switch.
 - Created DevOps pipelines for said projects using Gitlab's CI/CD framework written in YAML.
 
-## Frostkeep Studios/Indi-Ev, Software Engineer
-
-- Oct 2019 – Apr 2020
-- Irvine, CA, USA
-- Embedded Android development for an electric vehicle Infotainment System on an NXP IMX8 SoM.
-- Developed android navigation app using mapbox android SDK.
-- Integrated Alexa-Auto SDK into navigation application.
-
 ## Panasonic Avionics Inc, MTS 2 Software Engineer
 
 - Mar 2016 – Oct 2019
 - Lake Forest, CA, USA
 - Developed/Maintained a File Delivery application written in C/C++ that was responsible for pushing a large file-set over a Multicast UDP stream to hundreds of seat-back monitors of the InFlight Entertainment System.
-- It advertised these files to upper layers via a FUSE FS. Android SELINUX compliant.
 - Developed/Maintained a loading application in C++/QT for use by Field Engineers to load initial software set to the plane in a factory-fresh state.
-- Created a toolchain for a legacy target.
 - Dockerized build environments for said apps and integrated them into Gitlab CI pipeline.
-- Created Expect scripts to automate user-input to hundreds of seatback monitors for testing.
-
-## Kiersted System LP, Software Engineer
-
-- Nov 2015 – Mar 2016
-- Irvine, CA, USA
-- Developed dynamic web applications using the Java EE + Spring frameworks.
-- Incorporated data visualization techniques into web apps.
-
-## Magzor Robotics Inc, Platform Architect Intern
-
-- June 2015 – Nov 2015
-- Design and development of an Embedded Library that allows Magzor Solutions to integrate smoothly into popular electronics development platforms (Arduino, Texas Instrument's MSP430/432, Intel Edison, etc).
-- Designed and developed a Code Generator to give Magzor customers custom programs to use with their online hardware purchases.
 
 # Skills
 

@@ -4,7 +4,7 @@ cv:
   email: seanletzer@gmail.com
   phone: +1(818) 224-9948
   #website: https://www.linkedin.com/in/sletzer
-  photo: "assets/profile_picture.jpg"
+  #photo: "assets/profile_picture.jpg"
   location: Los Angeles, CA, USA
   social_networks:
     - network: LinkedIn
@@ -56,16 +56,6 @@ cv:
           - Developed a Linux device driver for a custom FPGA image on the Time-Sensitive Network Switch.
           - Created/customized a Linux distribution via Yocto that was the main embedded-OS that ran on the Time-Sensitive Network Switch.
           - Created DevOps pipelines for said projects using Gitlab's CI/CD framework written in YAML.
-      - company: Frostkeep Studios/Indi-Ev
-        position: Software Engineer
-        start_date: 2019-10
-        end_date: 2020-04
-        summary: ""
-        location: Irvine, CA, USA
-        highlights:
-          - Embedded Android development for an electric vehicle Infotainment System on an NXP IMX8 SoM.
-          - Developed android navigation app using mapbox android SDK.
-          - Integrated Alexa-Auto SDK into navigation application.
       - company: Panasonic Avionics Inc
         position: MTS 2 Software Engineer
         start_date: 2016-03
@@ -74,28 +64,8 @@ cv:
         location: Lake Forest, CA, USA
         highlights:
           - Developed/Maintained a File Delivery application written in C/C++ that was responsible for pushing a large file-set over a Multicast UDP stream to hundreds of seat-back monitors of the InFlight Entertainment System.
-          - It advertised these files to upper layers via a FUSE FS. Android SELINUX compliant.
           - Developed/Maintained a loading application in C++/QT for use by Field Engineers to load initial software set to the plane in a factory-fresh state.
-          - Created a toolchain for a legacy target.
           - Dockerized build environments for said apps and integrated them into Gitlab CI pipeline.
-          - Created Expect scripts to automate user-input to hundreds of seatback monitors for testing.
-      - company: Kiersted System LP
-        position: Software Engineer
-        start_date: 2015-11
-        end_date: 2016-03
-        summary: ""
-        location: Irvine, CA, USA
-        highlights:
-          - Developed dynamic web applications using the Java EE + Spring frameworks.
-          - Incorporated data visualization techniques into web apps.
-      - company: Magzor Robotics Inc
-        position: Platform Architect Intern
-        start_date: "2015-06"
-        end_date: "2015-11"
-        summary: ""
-        highlights:
-          - Design and development of an Embedded Library that allows Magzor Solutions to integrate smoothly into popular electronics development platforms (Arduino, Texas Instrument's MSP430/432, Intel Edison, etc).
-          - Designed and developed a Code Generator to give Magzor customers custom programs to use with their online hardware purchases.
     skills:
       - label: Programming Languages (Proficient)
         details: "C/C++, Java, Python, Bash"
