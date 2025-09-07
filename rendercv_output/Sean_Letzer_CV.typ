@@ -465,7 +465,7 @@
 
 
 #one-col-entry(
-  content: [Looking to bring my expertise in embedded systems alongside a fluid mix of soft skills and technical skills to a team that values collaboration and innovation.]
+  content: [I am seeking a Software Engineering position where I can utilize my skills in embeddded development.]
 )
 
 
@@ -492,7 +492,7 @@ Apr 2023 – May 2025
     #strong[Google], Customer and Partner Engineer
     #v(-design-text-leading)
 
-    #v(design-highlights-top-margin);#highlights([Understand product area partner\/Original Equipment Manufacturer \(OEM\) use-cases, distilling them into product requirements and implementation.],[Support enablement of third-party labs for automated and manual device certifications.],[Define experiences that realize requirements and build the necessary pieces working with key platforms and partner devices.],[Identify opportunities to improve scaled solutions to more device categories.],[Drive technical execution of strategic partner relationships within Google and launch third-party products.],[Support partners in product feature definition, implementation, pre-test, and production.],[Support partners to develop and customize features.],[Work with product area Engineering sub-teams to get features built and implemented.],[Support SoC partners, bring up, and development.],[Assist System Integrators, Original Design Manufacturers \(ODMs\), and Distributors in scaling products.],)
+    #v(design-highlights-top-margin);#highlights([Worked with Android Auto Certification Suite debugging and setting up lab environments for Auto OEMs and Tier 1 suppliers],[Assisted in product roadmap, and compliance scheduling for Android Auto Certification],[Built bench setup of a head unit simulator using Google hardware],)
   ],
   right-content: [
     Playa Vista, CA, USA
@@ -519,60 +519,15 @@ Apr 2020 – Sept 2022
 #v(design-entries-vertical-space-between-entries)
 #two-col-entry(
   left-content: [
-    #strong[Frostkeep Studios\/Indi-Ev], Software Engineer
-    #v(-design-text-leading)
-
-    #v(design-highlights-top-margin);#highlights([Embedded Android development for an electric vehicle Infotainment System on an NXP IMX8 SoM.],[Developed android navigation app using mapbox android SDK.],[Integrated Alexa-Auto SDK into navigation application.],)
-  ],
-  right-content: [
-    Irvine, CA, USA
-
-Oct 2019 – Apr 2020
-  ],
-)
-
-#v(design-entries-vertical-space-between-entries)
-#two-col-entry(
-  left-content: [
     #strong[Panasonic Avionics Inc], MTS 2 Software Engineer
     #v(-design-text-leading)
 
-    #v(design-highlights-top-margin);#highlights([Developed\/Maintained a File Delivery application written in C\/C++ that was responsible for pushing a large file-set over a Multicast UDP stream to hundreds of seat-back monitors of the InFlight Entertainment System.],[It advertised these files to upper layers via a FUSE FS. Android SELINUX compliant.],[Developed\/Maintained a loading application in C++\/QT for use by Field Engineers to load initial software set to the plane in a factory-fresh state.],[Created a toolchain for a legacy target.],[Dockerized build environments for said apps and integrated them into Gitlab CI pipeline.],[Created Expect scripts to automate user-input to hundreds of seatback monitors for testing.],)
+    #v(design-highlights-top-margin);#highlights([Developed\/Maintained a File Delivery application written in C\/C++ that was responsible for pushing a large file-set over a Multicast UDP stream to hundreds of seat-back monitors of the InFlight Entertainment System.],[Developed\/Maintained a loading application in C++\/QT for use by Field Engineers to load initial software set to the plane in a factory-fresh state.],[Dockerized build environments for said apps and integrated them into Gitlab CI pipeline.],)
   ],
   right-content: [
     Lake Forest, CA, USA
 
 Mar 2016 – Oct 2019
-  ],
-)
-
-#v(design-entries-vertical-space-between-entries)
-#two-col-entry(
-  left-content: [
-    #strong[Kiersted System LP], Software Engineer
-    #v(-design-text-leading)
-
-    #v(design-highlights-top-margin);#highlights([Developed dynamic web applications using the Java EE + Spring frameworks.],[Incorporated data visualization techniques into web apps.],)
-  ],
-  right-content: [
-    Irvine, CA, USA
-
-Nov 2015 – Mar 2016
-  ],
-)
-
-#v(design-entries-vertical-space-between-entries)
-#two-col-entry(
-  left-content: [
-    #strong[Magzor Robotics Inc], Platform Architect Intern
-  ],
-  right-content: [
-    June 2015 – Nov 2015
-  ],
-)
-#one-col-entry(
-  content: [
-    #v(design-highlights-top-margin);#highlights([Design and development of an Embedded Library that allows Magzor Solutions to integrate smoothly into popular electronics development platforms \(Arduino, Texas Instrument's MSP430\/432, Intel Edison, etc\).],[Designed and developed a Code Generator to give Magzor customers custom programs to use with their online hardware purchases.],)
   ],
 )
 
