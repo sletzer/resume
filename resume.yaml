@@ -1,6 +1,6 @@
 cv:
   name: Sean Letzer
-  label: Software Engineer
+  headline: Software Engineer
   email: seanletzer@gmail.com
   phone: +1(818) 224-9948
   #website: https://www.linkedin.com/in/sletzer
@@ -15,6 +15,16 @@ cv:
     Objective:
       - "Looking to bring my expertise in embedded systems alongside a fluid mix of soft skills and technical skills to a team that values collaboration and innovation."
     experience:
+      - company: "Fisica"
+        position: Senior Software Engineer
+        start_date: 2025-11
+        end_date: present
+        location: Simi Valley, CA, USA
+        summary: ""
+        highlights:
+          - Maintained and optimized the core embedded software codebase for a **Battery Management System (BMS)**.
+          - Achieved 100% MC/DC coverage using **Parasoft**, advancing the BMS codebase towards **DO-178C DAL-A** (SW-CI 1) compliance.
+          - Designed and deployed DevOps infrastructure using **Docker Compose** and Infrastructure-as-Code (IaC) best practices, self-hosting **GitLab**, **Parasoft DTP**, **Nginx** (reverse proxy), and Go-links.
       - company: Canoga Perkins
         position: Software Engineering Manager
         start_date: 2023-04
@@ -82,11 +92,11 @@ cv:
       - label: Source Control
         details: "Git, SVN, Gitlab"
       - label: Static Analysis & Code Review
-        details: "Codebear Collaborator, Klockwork, Coverity"
+        details: "Codebear Collaborator, Klockwork, Coverity, Parasoft"
       - label: Security
         details: "SELINUX, TLS, Linux PAM Module"
       - label: Toolchains
-        details: "GCC, Bionic NDK, Crosstool-ng, Buildroot, Yocto"
+        details: "GCC, Crosstool-ng, Buildroot, Yocto"
     education:
       - institution: University Of California, Irvine
         area: Computer Science
@@ -95,5 +105,5 @@ cv:
 design:
   theme: classic # valid options are: classic, sb2nov, moderncv, engineeringresumes, engineeringclassic
   page:
-    show_page_numbering: false
-    show_last_updated_date: false
+    show_footer: false
+    show_top_note: false
