@@ -86,6 +86,13 @@
 )
 
 
+#grid(
+  columns: (auto, 1fr),
+  column-gutter: 0cm,
+  align: horizon + left,
+  [#pad(left: 0.4cm, right: 0.4cm, image("profile_picture.jpg", width: 3.5cm))
+],
+  [
 = Sean Letzer
 
   #headline([Software Engineer])
@@ -96,6 +103,8 @@
   [#connection-with-icon("location-dot")[Los Angeles, CA, USA]],
   [#link("https://linkedin.com/in/sletzer", icon: false, if-underline: false, if-color: false)[#connection-with-icon("linkedin")[sletzer]]],
   [#link("https://github.com/sletzer", icon: false, if-underline: false, if-color: false)[#connection-with-icon("github")[sletzer]]],
+)
+  ]
 )
 
 
